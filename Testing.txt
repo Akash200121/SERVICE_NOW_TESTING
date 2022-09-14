@@ -1,7 +1,351 @@
-Software is the Collection of Program
+Software Testing 
+================
 
-Three Types of Software
+Instructor - Shivjee Choudary 	 
 
-	- System Software
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+14/09/2022
+----------
+
+--> What is a Software ?
+	Software is the Collection of Programs
+
+>> Three Types of Software
+
+	- System Software(OS)
+		Example - MacOS, Linux, Windows
+
 	- Programming Software
+		Example - Compiler for different programming Languages
+	
 	- Application Software
+		Example - Applications like Zoom, ServiceNow 
+
+
+>> Software Testing 
+
+SDLC - Software Development Life Cycle
+
+Software Testing is part of SDLC
+
+--> Why do we do Software Testing ?
+
+	- We do it to detect and identify the defects in the Software
+	
+--> Benifits of doing Software Testing :
+
+	- By doing Software Testing we improve the Quality of Software
+	- It also ensures that the Software is delivered on time
+	- Also checks whether the Software is Within Budget
+	- Ensuring Software Developed meets the requirements
+	- Maintenance
+
+
+-->> Types of Software Testing :
+
+		- Manual Testing
+		- Automation Testing
+	
+
+1. Manual Testing - 
+		Testing is done manually
+			
+	Example : Producing 10 pens and testing manually whether it works or not
+			  But when 10000 pens are produced it is not possible for a single person to do
+			  Also the cost involved for hiring more employees is more
+			  
+2. Automation Testing -
+		Testing is done with the help of a Pre Developed Software or any machine 
+
+	Example : The cons in the previous example can be saved by engaging a machine and investing money on it / building a Testing Software
+			  This is called Automation Testing
+
+
+
+--> Error : It is a Human Mistake
+			Example - Syntax Error
+
+--> Bug / Defect : If some feautre is not working as per our expectation
+				   Unwanted behaviour of application
+				   Example - Clicking on Login and it Logging out
+				
+--> Failure : End User Action 
+			  Example - If Status is not getting uploaded in Whatsapp we say it is a Failure
+
+
+Bug / Defect - Tester's point of View
+Faiure - End Users point of View
+
+
+--> 10 Benifits of doing Software Testing -
+	
+	1. Testing at early stage of Development saves the time later
+			- Better Late than never
+
+	2. Software Testing ensures there are low/no bugs
+
+	3. Customer Satisfaction
+
+	4. To determine the Software performance
+
+	5. We all make mistakes - Testing the system to rectify the mistakes
+
+	6. Reduce Cost
+
+	7. End users must have flawless experience 
+
+	8. Reputation
+
+
+-->> SDLC 
+
+1. Planning and Requirement Analysis - Stakeholders, Domain Experts, Senior Members
+2. Designing						 - System Architects and Developers
+3. Development						 - Developers(Programmers)
+4. Testing							 - Testers
+5. Maintenance						 - Developers
+
+
+--> Assignment -
+	Prepare SRS for a client who needs Gmail like Software
+
+Solution : 
+
+	Requirement -
+
+		1.
+
+
+
+
+--> Types of SDLC 
+
+	1. Waterfall Model
+	2. Spiral Model
+	3. V - Model
+
+1. Waterfall Model -
+
+		- Most Popular
+		- Each Step is executed only after the previous Step is completed
+		- It is simple to execute
+	
+	Steps in Waterfall Mode :
+		- Requirements : We ask the customer a complete requirement 
+						 And prepare SRS
+
+		- Design : Helps in specifying Hardware and system requirements 
+					Specifying the whole Architecture
+
+		- Implementation : The App is divided into units(Modules)
+						    At the end this will be integrated
+						    Then Unit Testing is performed
+
+		- Verification - Entire system is tested for Functinal and Non Functional Tester
+						 Then Product is deployed 
+
+		- Maintenance - If some issue comes up in client environment
+						It will be fixed via update etc...						   
+
+	
+
+	Advantage : 
+		
+		- Easy to understand and use
+		- Each Phase has specific deliverables and review process
+		- Phases are proccessed and completed one at a time
+		- Suitable for small project 
+	
+	Disadvantage :
+
+		- Once Application is in testing stage, it is very difficult to go back and change
+		- Software cannot be deployed until all the process are completed
+		- High Risk and Uncertainity
+		- Not good for complex and Object Oriented Projects
+		- Poor Model for long and ongoing Projects
+		- Not suitable for the projects where requirements are at a moderate to high risk of changing
+
+
+	When to use ?
+
+		- Only when Requirements are well known, clear and fixed
+		- Technology is understood
+		- No ambiguous requirements
+		- Project is short
+		- Ample resources with required expertise are available freely
+	
+
+2. Spiral Model -
+		- It is iterative model
+		- This model overcomes the drawbacks of Waterfall model
+		- Evolutionary Software Process model which is combination of an iterative nature of prototyping and systematic ascpects of Traditional Waterfall Model
+		- We follow Spiral Model Whenever there is a dependency on the Modules
+		- In every cycle a new software version will be released
+		- Software will be released in multiple version, Therefore this model is also known as Control model
+		- This kind of Model is suitable for product based company
+				Example : Microsoft, Facebook, Whatsapp
+
+	When to use ?
+
+		- When costs and risk evaluation is important
+		- For medium to high risk projects
+		- Users are unsure of their needs
+		- Requirements are complex
+		- Significant changes are expected
+	
+	Four Fold Procedure :
+
+		- Planning 
+				- The objectives and constraints of the project are determined and are documented 
+
+		- Risk Analysis
+				- All possible alternatives, which can help in developing a cost effective project are analyzed
+				- This phase identfies and resolves all the possible risks in the project Development
+		
+		- Engineering
+				- The actiual development of the project is carried out
+				- The output of this phase is passed through all the phases itertively in order to obtain improvements in the same
+
+		- Customer evaluation 
+				- Developed product is passes on to the customer in order to receive customer's comments and suggestions
+				- This phase is very much similar to Testing Phase 
+
+	
+
+	Advantage :
+		
+		- Changing requirements can be accomodated
+		- Allows for extensive use of Prototypes
+		- Requirements can be captured more accurately
+		- Users see the system early
+		- Early and frequent feedback from users
+
+	Disadvantage :
+
+		- End of the project may not be known early
+		- Not suitable for small or low risk projects and could be expensive for small projects
+		- Project is complex
+		- Spiral may go indefinitely
+		- Risk Assessment expertise is required
+
+
+
+3. V - Model -
+
+	- It is in the form of V hence V-Model	
+	- It is also known as Verification and Validation Model
+	- Development of each phase is directly associated with Testing Phase
+	- The next phase starts only after completion of the previous phase
+
+Speciality of this model 
+	
+	We can Identify the problem at the early stage because testing happens in each stage
+
+
+>> Static Testing - Testing the project related documents(reviewing, walkthrough, inspection)
+
+	- White Box Testing
+	- Black Box Testing
+
+>> Dynamic Testing - This is actual testing
+
+		Techniques -
+					- Unit Testing
+					- Integration Testing
+					- System Testing
+					- UAT (User Acceptance Testing)
+
+
+--> What is Verification ?
+	Checks whether we are building the right product or not(What to build ?)
+	Focuses on Documentation
+	Verification is Typically involved in (reviewing, walkthrough, inspection)
+
+--> What is Validation ?
+	Checks whether we are building the product right or not(How to build ?)
+	Takes place after verification are completed
+	Focuses on Software
+	Validation is Typically involved in actual testing (Dynamic testing)
+
+
+	Advantages : 
+ 
+		- This is a highly disciplined model and Phases are completed one at a time.
+		- V-Model is used for small projects where project requirements are clear.
+		- Simple and easy to understand and use.
+		- This model focuses on verification and validation activities early in the life cycle thereby enhancing the probability of building an error-free and good quality product.
+		- It enables project management to track progress accurately.
+	
+	Disadvantages : 
+ 
+		- High risk and uncertainty.
+		- It is not a good for complex and object-oriented projects.
+		- It is not suitable for projects where requirements are not clear and contains high risk of changing.
+		- This model does not support iteration of phases.
+		- It does not easily handle concurrent events.
+
+
+--> This Model is used for Small to Medium sized projects
+
+
+Other Types of Models 
+	
+	- Incremental Model
+	- RAD Model
+	- Agile Model
+	- Iterative Model
+
+
+
+-->> STLC (Software Testing Life Cycle)
+
+		- STLC is a sequence of activities conducted during testing process to ensure software quality goals are meets
+
+	Phases of STLC - 
+			
+			1. Requirement Analysis			- QA interacts with various StakeHolders like client, Business Analyst, System Analyst, Technical Lead/ Development Manager 
+											  Takes decision on What all tests will be performed
+
+			2. Test Planning  				- It is a document which contains the plan related to all testing activities which needs to be done to deliver a quality product
+											  Senior QA Manager determines Test Plan Strategy along with efforts and cost estimates for the project
+											  The focus is to describe :
+											  		- What to test ?
+													- What cannot be tested ?
+													- Tools used for testing ?
+													- Resources
+													- Test Duration
+													- Risks and Contingencies Planning
+													
+
+			3. Test Case Development		- Testing Team prepares Test cases
+											  Prepares Test Data  
+											  Cases reviewed by peers or QA Lead 
+											  RTM(Requirement Traceability Matrix) prepared 
+											  RTM is Industry accepted format for tracking requirements. We can track backward and forward Traceability
+											  OOB Thinking
+
+											
+			4. Environment Setup			- Tools required for testing(Both Hardware and Software)
+											- Tools like -
+												Selenium
+        										ATF for Seleneum
+        										QTP
+        										RPA
+												Can be done parallel with test case development phase
+												We can have multiple QA Server
+
+
+
+			5. Test Execution				- Testers
+											  Bugs are reported to Development Team
+											  Development Team resolves bugs and it is retested to ensure it is bug free and ready to go live
+
+			6. Test Closure					- After Product being delivered
+											  Ensures Test completion		
+											  		  Handover Test Artifacts
+													  Project Retrospectives
+
+
+>> Selenium - It is a browser optimized framework that is commonly used for writing end to end test for web application 
+
