@@ -1,0 +1,7 @@
+Software is the Collection of Program
+
+Three Types of Software
+
+	- System Software
+	- Programming Software
+	- Application Software
