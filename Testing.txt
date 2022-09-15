@@ -1,7 +1,7 @@
 Software Testing 
 ================
 
-Instructor - Shivjee Choudary 	 
+Instructor - Tapas Kumar Mishra, Shivjee Choudary 	 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -348,4 +348,133 @@ Other Types of Models
 
 
 >> Selenium - It is a browser optimized framework that is commonly used for writing end to end test for web application 
+
+
+15/09/2022
+----------
+
+--> Testing - Development Point of View
+
+	Application - Developer
+
+- Before engaging the testing team to test the code it has to be tested by the Developer
+- This Testing phase is called as the Unit Testing
+		- In the Unit Testing, Developer test the functionalities he has developed
+
+	
+- Develop a code --> Test -->  
+
+
+
+>> Testing 
+	- Manual Testing
+	- Automated Testing 
+
+- Manual Testing :
+
+	- The Software Test Engineer have to manually check every functionality and feature
+	- He has to prepare the Test Cases
+	- The test cases are also called as bugs
+	- There is a priority associated with every bug
+	- What are the user personas and how do they use the application
+
+Excercise
+
+	- Testing User Personas for the Medical Expense Form
+		- Find out the possible personas who will be using the application 
+
+Solution : 
+
+	- Employee (end User): will be able to only write
+	- Hospital Administration: Read, Write, update, Delete
+	- Hospital Help Desk: Read, Write
+	- Hospital billing Department: Read, Write, Update
+	- Doctors: Read, Update(Additional Comments, not fields with payment details)
+	- Insurance Help Desk: Read
+	- Insurance Admin: Read, and Update comments
+
+
+Excercise 
+
+	- Access to the Application	
+		- Provide access to create incidents, change, requests and problem to the users of this application 
+	
+Solution :
+
+	- Giving different ITIL Roles to the Personas
+
+
+
+Excercise 
+
+	- Add an option for :
+			- Create an Incident --> Top Left (Three Lines)
+			- Create a Problem --> Near the Submit Button
+			- Call Doctor --> Top Right --> This should open an request to service portal
+
+
+Solution :
+
+		Create UI Actions and insert appropriate script of Incident, Problem and Request
+
+		Scripts can be obtained from UI Actions under Sytem Definitions
+
+
+>> Test Case
+
+Creating a Test Case Template
+
+	- Test ID : It is also called as Issue Id, Case ID, Case No
+		- Naming Convention : ProjectName_ModuleName_Number [RBT_IM_001]  
+										(or)
+							  ModuleName(Short)_CaseID  [IM001]
+
+	- Issue Description 
+
+	- Expected Output
+
+	- Actual Output
+
+	- Reference ID : Can be like Knowledge Article 
+
+	- Defect ID 
+
+	- Cycle 1 - First Round of Testing
+
+	- Cycle 2 - Second Round of Testing
+
+	- Comments : Our comments about the product / Application
+
+	- Tested By : Name of the Tester
+
+	- Date
+
+
+
+-->> Software Testing goals
+
+	- A good test case is one that has probability of finding any undiscovered bug
+	- A good test is not redundant
+	- A successful test is one that uncovers a yet discovered error
+	- It should be simple, should not be complex
+	- To check if the system does what it is expected to do
+	- To check if the system is fit for purpose
+	- To check if the system meets the requirements and be executed Successfully in the intended environment
+
+
+Assignment - 
+
+	Test Case for Login Page
+
+Solution :
+	
+	In the Excel sheet
+
+Assignment - 
+
+	Test Case for Create New Account Page in Facebook
+
+Solution :
+
+	In the Excel sheet
 
