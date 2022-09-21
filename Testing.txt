@@ -142,7 +142,7 @@ Solution :
 						    At the end this will be integrated
 						    Then Unit Testing is performed
 
-		- Verification - Entire system is tested for Functinal and Non Functional Tester
+		- Verification - Entire system is tested for Functional and Non Functional Tester
 						 Then Product is deployed 
 
 		- Maintenance - If some issue comes up in client environment
@@ -244,11 +244,14 @@ Speciality of this model
 
 
 >> Static Testing - Testing the project related documents(reviewing, walkthrough, inspection)
+					It is done before the executions
+
 
 	- White Box Testing
 	- Black Box Testing
 
 >> Dynamic Testing - This is actual testing
+					 This will be done after executions
 
 		Techniques -
 					- Unit Testing
@@ -316,6 +319,7 @@ Other Types of Models
 													- Resources
 													- Test Duration
 													- Risks and Contingencies Planning
+													- It also contains the exit criteria
 													
 
 			3. Test Case Development		- Testing Team prepares Test cases
@@ -468,7 +472,7 @@ Assignment -
 
 Solution :
 	
-	In the Excel sheet
+	In the Excel sheet - Login Page Test Case Template
 
 Assignment - 
 
@@ -476,7 +480,7 @@ Assignment -
 
 Solution :
 
-	In the Excel sheet
+	In the Excel sheet - Facebook Create New Account Test Case
 
 
 
@@ -489,7 +493,7 @@ Exercise :
 
 Solution :
 
-	In the Excel sheet 
+	In the Excel sheet - Currency Converter Test Case
 
 
 Exercise :
@@ -498,7 +502,7 @@ Exercise :
 
 Solution :
 
-	In the Excel sheet
+	In the Excel sheet - School Admission Form Test Case
 
 
 --> Writing Test Cases is an important task in software testing, software testing job responsibilities
@@ -526,3 +530,401 @@ Solution :
 		8. Not too long or too short
 		9. Test drive your tests
 		10. Run your tests regularly to keep them relevant
+
+
+
+
+19/09/2022
+----------
+
+
+Exercise :
+
+ 	Create a Test Case for Incident, Change, Request
+
+
+Solution :
+
+	In Excel sheet - Incident Table Test Case
+
+While writing the Test Case we have keep in mind the Field Type, Table, Condition based on field Visibility, 
+If the Choice Option is True / Yes then we have to mention all the Choices
+Read Only - When we dont use the keyboard the Field will be Read only
+
+
+
+--> Types of Testing -
+
+		1. Functional Testing
+		2. Non Functional Testing
+
+1. Functional Testing - Related to Client Requirements
+
+		- System Testing
+		- Regression Testing
+		- Smoke testing
+		- Sanity Testing
+    	- Unit Testing
+    	- Integration Testing 
+    	- Database Testing
+    	- WhiteBox Testing
+    	- BlackBox Testing
+    	- Gray Box Testing 
+    	- Monkey Testing 
+    	- AdHoc Testing
+    	- Componet Testing
+    	- GUI Testing 
+    	- End to End Testing
+    	- UAT
+    	    -Alpha
+    	    -Beta 
+    	- Acceptance Testing 
+    	- Happy Path Testing 
+    	- Negative Testing
+
+
+
+2. Non Functional Testing - 
+
+		1. Performance Testing - 
+				
+				- Load testing
+				- Stress Testing
+				- Volume Testing
+		
+		2. Security Testing - 
+
+				- Penetration testing
+				- SQL Injection
+				- Vulnerability
+				- Authentication testing
+				- Username / Password
+			
+		3. Compatability Testing
+
+
+		4. User Accessibility Testing - Making user friendly
+
+
+-->> White Box Testing - 
+		It is a technique in which software's internal structure. design, and coding are tested
+
+		- This testing is also known as : 
+					
+					- Open Box Testing 
+					- Transparent Testing
+
+>> Who involves in this type of testing ?
+
+	- Developer
+
+
+>> What do we verify ?
+
+1. Internal Security
+2. Broken or poorly structured
+3. The Flow 
+
+>> White Box Testing Techniques
+
+1. Statement Coverage
+		- Coverage = (Number of Statement Exercised/Total Number of Statments) *100     
+
+2. Branch Coverage
+
+3. Condition Coverage
+		- All the conditions should be covered
+
+
+
+-->> Black Box Testing -
+			Black Box Testing is a Software Testing Method in which the functionalities of Software are tested
+			No need to have Knowledge of Internal Code or Design
+
+>> Who involves in this type of testing ?
+
+	- Tester
+
+>> Black Box Testing Techniques
+
+1. Equivalence Class Testing 
+		- Minimize the Number of possible Test Cases
+
+2. Boundary Value Testing oR BVA(Boundary Value Analysis)
+		- Determines whether certain range of values are accepted for the system or not where an input is within certain range
+		- We decide the Boundary
+		- Focused on the values at the boundaries 
+
+3. Decision Table Testing
+		- It represents causes and their effects in a matrix
+
+4. State Transition Testing
+		- This Technique usually considers the state, outputs and inputs of a system during a specific period
+		- It checks for the behavioral changes of a system in a particular state or another state while maintaining same inputs
+
+
+
+
+
+
+>> Difference between White Box and Black Box Testing
+
+White Box Testing
+
+	- The developer performs 
+	- Awareness about what the software is supposed to do, also how it does
+	- To perform WBT, we should have an understanding of Programming
+	- In this developer should have understanding of internal design
+
+
+Black Box Testing
+
+	- Tester performs
+	- Need not be aware of what the software is supposed to do, also how it does
+	- No need to have understanding of coding
+	- No need to know Internal Design
+
+
+
+-->> Grey Box Testing - 
+				- Combination of Black Box and White Box Testing
+				- It is a Software Testing Technique to set a Software Product or application 
+				- We must have partial Knowledge of Internal Structure of the application 
+
+
+>> Why do we perform Grey Box Testing ? 
+
+		- It provides combined benefits of both BBT and WBT
+		- It combines the input of developers as well as the Testers and improves overall quality of the product
+		- It reduces the overhead of long process of testing Functional and Non Functional Types
+		- It gives enough free time for the developer to fix the bugs
+		- Testing is done from the users point of view rather than a designers point of view
+
+
+>> Types of 
+
+
+
+>> Difference between Black Box Testing, White Box Testing and Grey Box Testing
+
+White Box Testing
+
+	- The developer performs 
+	- Awareness about what the software is supposed to do, also how it does
+	- To perform WBT, we should have an understanding of Programming
+	- In this developer should have understanding of internal design
+
+
+Black Box Testing
+
+	- Tester performs
+	- Need not be aware of what the software is supposed to do, also how it does
+	- No need to have understanding of coding
+	- No need to know Internal Design
+
+
+Grey Box Testing 
+	
+	- Both Testers and Developers performs
+	- Need not be fully aware about what the software is supposed to do, also how it does
+	- Need to have some knowledge and Understanding of Programming
+	- Need to have partial knowledge of Internal Design 
+
+
+
+Exercise :
+
+	Test case for Users Table
+
+Solution - 
+
+	In Excel Sheet - User Table Test Case
+
+Exercise :
+
+	Test case for Request Table
+
+Solution - 
+
+	In Excel Sheet - Request Table Test Case
+
+
+
+
+20/09/2022
+----------
+
+
+Exercise :
+
+	Test case for Change Table
+
+Solution - 
+
+	In Excel Sheet - Change Request Test Case
+
+
+Exercise :
+
+	Test case for SLAs P1 Incident
+	
+	Response
+	Resolution
+	and Notifications
+
+
+Solution -
+
+	In the Excel Sheet - SLA Resolution and Response Test Case
+
+
+		1. We need to test this by creating a new incident 
+		2. Assignment Group and Assigned also adding Users / Groups to Watch List and Work Note List
+		3. Priority : Upgrade / Downgrade
+		4. Watch List, Worknotes : They should receive the Notifications
+		5. Assigned to : Person should receive notification
+		6. Caller : Should also receive Notifications
+		7. The Incident must be taken through different stages of The Incident Life Cycle
+		
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+21/09/2022
+----------
+
+ATF (Automated Testing framework)
+
+Objectives of ATF -
+	> To fasten up your digital transformation and perform quicker upgrades
+Released in the Istanbul Version - 2017
+
+>> Benefits of using ATF
+
+	- Quicker go-to market with reduced test cycle
+	- 80% decrease in time cost
+	- Reduce man-hour from 5 days to less than 2 hours
+	- Reports with real time screenshots
+	- Creation of future test purpose Template
+	- Improves quality of the product
+	- Simpler test automation process
+	- ATF increases the speed and reduces time taken
+	- We can schedule the test case as per requirements
+	- It will decrease the cost
+	- Immediate Visibility in the test results with lesser risks and quicker remediation
+
+
+>> Functions and Operations of ATF
+
+	- Creating and running tests
+	- Adding and deleting steps if required
+	- Altering the order of execution 
+	- Creating and running test suits 
+	- Recording the details and enabling to view them with screenshots
+	- Transiting the values from one step to next step
+	- Changing the Administration settings
+
+-->> Using these functionalities
+
+	- Impersonate the user
+	- Open a new form like the catalog task form
+	- Set field values on the forms like assigned to and description or add field that does not exist
+	- Submit the current form and confirm to Server
+
+
+>> What is Test Framework
+
+It is a set of guidelines or rules which is used for Creating and Designing Test Case
+A framework is compromised of a combination of pratices and tools that are designed to help QA Professionals test more efficiently
+
+
+>> Limitations
+
+	- Yet to have test step configuration 
+	- Does not have a manager or tester Roles
+	
+
+>> In Jakarta relaease it comprised of many new features, provided more flexibility of testing instance with "recorded at" which enabled to view transaction data for the automated results 
+
+
+-->> Test Automation framework	
+
+	- 
+
+
+
+
+Creating a New Test Case
+
+	- Filter Navigator --> Automated Test Frameworks --> Test --> New
+
+Enable Parameterized is checked when test case is used multiple times
+
+Test Steps : Using this tab we will be able to add tests to the test case either any of the option that is add test step or add test Template
+
+Test Result : This tab will be showing the test results once the test got executed
+
+Mutually Exclusive Test : ServiceNow provides an option to run two test case parallelly
+						  If we dont want to run two test cases parallelly we can add mutually exclusive so that these two test cases would not run parallelly
+
+Copy Test : We can copy the existing test case
+
+
+>> Enable the Run Button 
+
+>> Add Test Case	
+	- New Test Case	 - My Test 
+	- Click on Form and Open New Form
+	- Click next
+	- Choose Incident Table
+	- Run the Test
+	
+	- We can even add an existing record in the Test Case
+	- The Execution Order can be changed 
+
+
+>> To see in the Self Service View
+
+	- Add New Test Case - My Test 2
+	- Table Incident
+	- View ESS 
+
+>> To see in Agent Workspace View
+	 
+	 Change Form UI to Agent Workspace
+	
+
+
+>> Different Test Step configuration	
+
+All Steps - Under this one System will be displaying all the step configuration available in different categories
+
+Application Navigator - This can be used to verify the list
+
+Custom UI - In this category we can validate the functionality of UI Elements in the Portal 
+			Like Checking if the components are available or not	
+			Whether it is Clickable elements or not
+			What is Components state ?
+
+Email - The System provides us an option of validating the inbound email and outbound email whether they are generated by a flow or a notification 
+		We can check the subject line and if certain thing is available or not
+
+Form - This section can be used to validate the forms and that classic like opening a form, opening an existing record, set field values, validating the field
+
+Form in Service Portal - This Category can be used to open a certain form like opening an existing record, opening a form setting field values, field variable values, clicking on your reaction and then submitting the form
+Form in Service Portal is similar to Custom UI
+
+List and Related List - This category can be used to validate the functionality of the related list and the form and the dynamic filter or the list that populates when we click on new closed result
+
+Reporting - This one can be used to relate certai, what is available in the system or not ?
+
+Responsive Dashboard - It can be used to check if a dashboard can be shared or a dashboard is visible or not 
+
+Rest - Under this Category we can validate sent Rest Request Inbound, assert response time
+
+Server - In this category we can validate the record from the server side 
+
+Service Catalog in Service Portal - Under this the classic and portal view functionality coverage would be similar, but the regulation would be like opening a form in portal and setting field values
+
+
+
