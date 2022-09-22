@@ -832,7 +832,7 @@ Released in the Istanbul Version - 2017
 	- Submit the current form and confirm to Server
 
 
->> What is Test Framework
+>> What is Test Framework doc
 
 It is a set of guidelines or rules which is used for Creating and Designing Test Case
 A framework is compromised of a combination of pratices and tools that are designed to help QA Professionals test more efficiently
@@ -849,7 +849,10 @@ A framework is compromised of a combination of pratices and tools that are desig
 
 -->> Test Automation framework	
 
-	- 
+	- What is Automated Tested Framework doc
+
+
+-->> Viewing Test and Test Step Results doc
 
 
 
@@ -916,7 +919,7 @@ Form in Service Portal is similar to Custom UI
 
 List and Related List - This category can be used to validate the functionality of the related list and the form and the dynamic filter or the list that populates when we click on new closed result
 
-Reporting - This one can be used to relate certai, what is available in the system or not ?
+Reporting - This one can be used to related certain, what is available in the system or not ?
 
 Responsive Dashboard - It can be used to check if a dashboard can be shared or a dashboard is visible or not 
 
@@ -928,3 +931,214 @@ Service Catalog in Service Portal - Under this the classic and portal view funct
 
 
 
+
+--> Test Case
+
+	1. Open a New Form 
+		- Table : Incident
+	
+	2. Set Field values 
+		Caller - Abel Tuter
+		Short Description - ""
+	
+	3. Submit the form 
+
+	4. Open an Existing Recording
+			- Using Data Pill Picker 
+					- This shows the recently created record in the Incident
+	
+
+Assignment 
+
+	Omit Step 3 in the previous and incident of using Data Pill Picker, open an existing incident
+
+Solution : 
+
+	1. Open a New Form 
+		- Table : Incident
+	
+	2. Set Field values 
+		Caller - Abel Tuter
+		Short Description - ""
+	
+
+	3. Open an Existing Recording
+
+
+>> Here the records of the incident is not stored as it goes to a Rollback during Testing
+
+
+
+
+22/09/2022
+----------
+
+
+--> New Test Case - My Test 3
+
+		- Add Test Step 
+			- Form : Open a New Form
+			- Table : Incident
+		
+		- Set Field values
+			- Short Desc : "HI"
+			- Caller : Abel Tuter
+
+		- Test 
+
+		- Now change the view to Agent Workspace and see the Difference
+	
+
+
+Different Types of View
+
+ESS - Employee Self Service - End Users
+Agent Workspace - Clients
+Standard - Developers and Testers
+
+
+
+--> New Test Case - My Test 4
+
+		- Add Test Step
+			- Form : Open a New Form 
+			- Table : Incident
+		
+		- Add Test Step 
+			- Field State Validation	
+			- Visible : Number, Short Description
+			- Not Visible : Expected start 
+			- Read Only : Priority
+			- Not Read Only : SubCategory
+			- Mandatory : Caller
+			- Not Mandatory : Assigned to 
+		
+		- Now Run Test
+
+		- Do some Changes like 
+			- Not Mandatory : Category 
+		
+		This is called Negative Testing
+	
+
+
+
+--> New Test Case - Change Test 
+
+		- Add Test step
+			- Form : Change
+			- Table : change request
+		
+		- Add Field State Validation 
+			- Visible : EverythinG from TC 001
+			- Not Visible : Domain Path, Move From 
+			- Read Only : Type, Conflict Status, Conflict Last Run
+			- Not Read Only : Priority
+		
+		- Run Test 
+
+
+
+--> New Test Case - Open Catalog Item
+
+		- Add Test Step 
+			- Service Catalog
+			- Open Catalog Item 
+			- Catalog Item - Any Catalog we want
+		
+		- Run Test 
+
+
+
+--> New Test Case - Open Record Producer
+		
+		- Add Test Case
+			- Service Catalog
+			- Open Record Producer
+			- Choose Any of the records
+
+		
+		- Run Test
+
+
+
+
+--> What is Test Template - 
+
+	An ATF test template is a reusable set of test steps that are commonly used together
+	Test Templates can include any combination of test steps
+	A template's test steps may require additional configuration once added to a test
+
+--> Creating a Test Template
+	Filter Navigator -> Test Templates -> Template 1
+
+	Test Steps --> Impersonate
+				   Open a New Form 
+				   Set Field Value
+				   Submit
+
+
+--> Now create a New Test Case  - Test Template 
+
+	Add Test Template - Template 1
+	Add Table - Incident
+	The Test Steps from the Test Template will import
+
+	- Click Impersonate and Choose User 
+	- Create a Form
+	- Set Field values
+	- Submit
+
+We can add many Test Templates in a Test Case
+
+
+-->> Test Suites
+
+		Test suites are hierarchical, logical groupings of related tests and/or other test suites to run as a single job
+
+
+How to access ?
+	Filter Navigator -> Suites (under ATF) 
+
+
+Creating New Test Suites ?
+		- New 
+			Name : Suite Test
+		
+		- Filter Condition 
+			- Name contains Test
+		
+		- This will import 19 Tests
+
+		- We can as well add Child Test Suites 
+		
+		- Run Test Suites
+
+
+--> Difference Between Test Template and Test Suites
+
+Test Template - Collection of Test Steps
+Test Suites - Collection of Similar types of tests
+
+
+--> Parallel Testing - We can run multiple test case at single time
+
+We can open two test cases and run one in Normal browser and the other in Incognito Mode or in any other browser
+
+
+--> Alpha Testing and Beta Testing
+
+>> Alpha Testing 
+
+	- Conducted from Developers End
+	- Performed by Developer in Controlled Environment
+	- Performed before Software is Released
+	- Involves both Black Box and White Box Testing are involved
+
+>> Beta Testing
+
+	- Conducted at Users Place
+	- Performed in an Environment not controlled by Developer
+	- Performed after Software is Released 
+	- Involves only Black Box Testing is involved
+	
