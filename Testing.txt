@@ -247,8 +247,6 @@ Speciality of this model
 					It is done before the executions
 
 
-	- White Box Testing
-	- Black Box Testing
 
 >> Dynamic Testing - This is actual testing
 					 This will be done after executions
@@ -258,6 +256,9 @@ Speciality of this model
 					- Integration Testing
 					- System Testing
 					- UAT (User Acceptance Testing)
+
+		- White Box Testing
+		- Black Box Testing
 
 
 --> What is Verification ?
@@ -1141,4 +1142,350 @@ We can open two test cases and run one in Normal browser and the other in Incogn
 	- Performed in an Environment not controlled by Developer
 	- Performed after Software is Released 
 	- Involves only Black Box Testing is involved
+
+
+
+
+--> Create a Report, share the report with any of the user 
+	Create a Test Case and use Reporting -> Report Visibility and Test if the User is able to view the Report
+
+Solution : 
+
+	- Create a New Report
+	- Share the Report to User 
+	- Create a New Test Case 
+	- Test Steps 
+			- Impersonate User
+			- Report Visibility
 	
+
+
+23/09/2022
+----------
+
+REST API - Respresentational State Tranfer
+
+In Tables - Under Application Access --> Allow access to this table via web services
+
+Any time if Third Party Application is trying to access the data of this table they can access this data when this check box is checked
+By default They can only read this data
+
+
+	- REST API is the method used to communicate between the table with the Third Party Application 
+
+How to communicate / Mechanism ?
+
+
+Tools used to Test REST API
+	- ServiceNow REST API Explorer
+	- Postman
+
+>> REST API Parameters
+
+1. GET 	- Retrieve the data from the ServiceNow System from a third party by querying the database from a 3rd Party
+2. POST - Creating a New Record in the ServiceNow from the 3rd Party / External Tool
+3. PATCH - Update / Modify the Records
+4. PUT - Update / Modify the Records
+5. DELETE - Delete a record
+
+
+>> Difference between PATCH and PUT
+
+	- PATCH : We can individually update the fields in a Record
+	- PUT : The whole records gets updated
+
+>> How to use this ?
+
+	Filter Navigator --> REST API --> REST API Explorer
+
+
+
+
+
+
+- Namespace - Now
+			- It is The ServiceNow
+
+- API Name - Table API 
+		   - We can Choose table and access the data
+		
+- API Version - Latest 
+
+--> By default it is Retrieve records from a table (GET)
+	If we want we can change
+
+
+--> GET	
+
+	- Select Table - Incident
+	- Copy the sys_id of any incident
+	- Add Parameter 
+		- SYS_ID 
+			(or)
+		- Number
+	- Send 
+
+
+REST API Response Code
+
+	- 200 : OK - Successfully Connected / Retrived
+	- 201 : Created - Record has been created
+
+Here we also have the code snippets which can be used in client side 
+Here we have ServiceNow Script, Python, Ruby, Curl, JavaScript, Perl, Powershell
+
+As Testers we need to Test if the code of all formats are working or Not
+
+
+--> POST
+
+	- Select Table - Incident
+	- 
+
+
+
+--> Whenever we try to Retrieve or Create a Record an API appears automatically
+--> The format used here to communicate the Request and Response is JSON 
+--> The Request and Response Format is JSON
+
+JSON - Is a Universal Standard for the Communication 
+	   It is an Advanced Extension of JS
+
+
+
+- In the POST we have a New Field Request Body 
+
+	- We have to put some mandatory fields of the Table 
+	- Now we add field and give values 
+		- Caller : Abel Tuter
+		- Short Description : Hi
+	
+	- We can aswell Verify It manually
+
+
+
+--> Assignment	
+
+		Create a New User in the User Form 
+
+Solution : 
+
+	- Using POST	
+	- Table : sys_user
+	- Add Field and Give Values
+		- User Name : Itachi	
+		- First Name : Itachi
+		- Last Name : Uchiha
+	
+	- Check for the same in the User Table
+
+
+--> PUT
+
+	- Add Table : Incident
+	- Sys ID is also Important to update a record
+	- Add field 
+		Description : Hello 
+	
+	- Test 
+
+
+--> Assignment 
+	In the User Record Created recently update Mangaer to Abel Tuter
+											   Department to IT
+
+Solution : 
+
+	- Using PUT 
+	- Table : sys_user
+	- Give sys_id
+	- Add Field and give values
+		- Manager : Abel Tuter
+		- Department : IT
+	
+	- Save 
+
+	- Test
+
+
+--> DELETE
+
+	Delete the User created 
+
+		- Give Table Name : sys_user
+		- Give sys_id
+
+		- Save
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+DEFECT MANAGEMENT
+
+
+--> Defect - Part of ITBMIT Business Management) not ITSM 
+ITBM has been renamed as Strategic Portfolio Management
+
+--> Enabling Plugins (Plugins Enablement)
+
+		- Agile development
+				- Agile Development 2.0 along with Demo Data
+				- Agile Development ATF Test
+				- Agile Development - Unified Backlog
+
+
+--> ITSM vs ITBM
+
+ITSM : 
+	- To manage the Service Management
+
+
+
+ITBM :
+	- IT Business Management
+	- Renamed as Strategic Portfolio Management
+
+
+
+--> Strategic Portfolio Management 
+		- Agile Development
+				Agile also known as Scrum Process
+				In Agile Development 
+					Sprint - Whole project divided into small parts
+					User Stories
+
+		
+		- PPM - Project and Portfolio Management
+		
+--> Sprint : Two week Program
+			 It contains multiple Stories
+			 Each Story is assigned to a developer
+			 Each story will have a T Shirt Size
+			 	T Shirt Size : XL, L, M, S 
+
+
+
+--> Defect 
+
+To work in this Defect Manageent the Role Needed is rm_tester
+
+
+
+What is a Defect ?
+
+What is the Defect Lifestyle ?
+
+Difference between similar terminologies 
+
+How to Create a Defect in serviceNow and its lifecycle ?
+
+
+
+Filter Navigator -> Agile --> defects
+
+Create New Defect
+
+	- A defect in Software Testing is about finding a deviation of the Software application from the end users requirements or original business requirements
+
+	Example - The employee Hospital application created had	
+				Duration Field : It is not populated with the correct calculation, this is a defect
+
+
+>> Defect lifecycle
+
+	- Draft
+	- Scoping
+	- Awaiting Approval
+	- Work In Progress
+	- Testing/QA
+	- Deployment
+	- Closed
+
+State : Draft
+Short Description : Due Date is not working
+Description : 
+	Steps followed to Test the Feature
+
+1. Navigate to the Medical Expense Form
+2. Enter the Admission Date and Discharge Date
+3. Expectation : The duration field shows the difference between the Discharge Date and the Admission Date
+
+Defect : This feature is not working
+
+Priority : Moderate
+
+
+
+Different States of a Defect 
+
+	- Draft
+			- In creation
+	- Scoping
+			- Checked whether it is part of palnning to engage the development team 
+			- What are the things we are going to deliver 
+	- Awaiting Approval
+			- Approval from client (if any) or from the company itself
+			- This also involves billing
+	- Work In Progress
+			- Development work has started
+	- Testing/QA
+	- Deployment
+	- Closed Complete
+	- On Hold
+	- Cancelled
+
+
+Assignment group - Software
+Assigned to - Fred Luddy
+Product - Employee Portal 
+Reported Against - Change 
+				   Whatever Development happens goes through a Change Request 
+
+
+
+Differenence between Similar terminologies
+
+		- Bug 
+			- An Important Defect
+			- Software cannot be released with Bug
+
+		- Defect
+			- Deviation of Software application from user Expectation
+
+		- Error
+		- Failure
+		- Severity
+		- Priority
+		- Defect States
+
+--> Cross Browser - Testing the Application in different browsers
+
+
+Defect Life Cycle is a process in which defect goes through different stages in its entire life
+This lifecycle starts as soon as a bug is reported by the tester and ends when a tester ensures that the issue is fixed and wont re occur
+
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+DEBUGGER
+
+
+--> Client Side and Server Side Bug Debugging
+
+Client Side Debugging
+Go to Settings --> Developer --> Enable JavaScript Log and Field Watcher and Automated Test Framework Page Inspector
+
+
+Server Side Debugging 
+
+Filter Navigator --> Script Debugger 
+
+We need to select the break points
+
+
+Parameterized Testing 
+
+	 -> Filter Navigator -> ATF - Parameterized Test Result
+
+Test -> Change -> Create Standard Change via Service Portal 
+
